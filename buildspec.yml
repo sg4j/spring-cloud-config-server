@@ -1,10 +1,9 @@
 version: 0.2
 
 phases:
-  post_build:
-    commands:
-      - mvn package
-artifacts:
-  files:
-    - '**/*'
-  base-directory: 'target/spring-config-server'
+  commands:
+    - echo Entered the post_build phase...
+    - echo Build completed on `date`
+  artifacts:
+    files:
+      - target/spring-config-server-0.0.1-SNAPSHOT.jar
