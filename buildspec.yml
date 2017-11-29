@@ -4,6 +4,6 @@ phases:
   commands:
     - echo Entered the post_build phase...
     - echo Build completed on `date`
-  artifacts:
-    files:
-      - target/spring-config-server-0.0.1-SNAPSHOT.jar
+artifacts:
+  files:
+    - target/spring-config-server-0.0.1-SNAPSHOT.jar
