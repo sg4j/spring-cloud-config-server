@@ -1,5 +1,10 @@
 version: 0.2
 phases:
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo Build started on `date`
+      - mvn install
   post_build:
     commands:
       - echo Entered the post_build phase...
